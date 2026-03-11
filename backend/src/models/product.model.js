@@ -9,11 +9,14 @@ const productSchema = new Schema({
     },
       name:{
         type:String,
-        required:true
+        required:true,
+        index:true
     },
       sku:{
         type:String,
-        required:true
+        required:true,
+        unique:true,
+        index:true
     },
       description:{
         type:String,
